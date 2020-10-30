@@ -6,3 +6,11 @@ if (num1<num2 && num2 < num3) {return 'ascending order';
 }else if (num1 > num2 && num2> num3) { return 'descending order';
 }else return 'no order';
 }
+_______________________________
+function ascendingOrDescendingOrder(num){
+
+if (+String(num)[0] < +String(num)[1] && +String(num)[1]< +String(num)[2]) return 'ascending order';
+else if (+String(num)[0] > +String(num)[1] && +String(num)[1] > +String(num)[2]) return 'descending order';
+else return 'no order';
+}
+console.log(ascendingOrDescendingOrder(431))
