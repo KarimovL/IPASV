@@ -1,0 +1,8 @@
+function ascendingOrDescendingOrder(num){
+let num3 = num % 10;
+let num2 = (num-num3)/10%10;
+let num1= num /100;
+if (num1<num2 && num2 < num3) {return 'ascending order';
+}else if (num1 > num2 && num2> num3) { return 'descending order';
+}else return 'no order';
+}
